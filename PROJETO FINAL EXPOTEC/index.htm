@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog do Canadá</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="canada.png" type="image/x-icon">
+    
+    <script>
+        function showPopup(topic) {
+            const popupText = document.getElementById("popup-text");
+            const popupImage = document.querySelector(".popup-image");
+
+            let imageSrc = "";
+            let textContent = "";
+
+            switch (topic) {
+                case 'atletas':
+                    imageSrc = '95974f84-0388-49df-ae03-2c9cc3cb6954.png'; // Altere para o caminho da imagem dos atletas
+                    textContent = "O Canadá possui uma rica tradição olímpica com atletas lendários...";
+                    break;
+                case 'olimpiadas':
+                    imageSrc = 'caminho/para/imagem-olimpiadas.jpg'; // Altere para o caminho da imagem das olimpíadas
+                    textContent = "Canadá sediou duas edições dos Jogos Olímpicos: Montreal em 1976 e Calgary em 1988.";
+                    break;
+                case 'esportes':
+                    imageSrc = 'caminho/para/imagem-esportes.jpg'; // Altere para o caminho da imagem dos esportes
+                    textContent = "No Canadá, o hóquei no gelo é o esporte mais popular e um verdadeiro ícone nacional...";
+                    break;
+                case 'estadios':
+                    imageSrc = 'caminho/para/imagem-estadios.jpg'; // Altere para o caminho da imagem dos estádios
+                    textContent = "O Canadá é lar de estádios como o Rogers Centre em Toronto...";
+                    break;
+                case 'eventos':
+                    imageSrc = 'caminho/para/imagem-eventos.jpg'; // Altere para o caminho da imagem dos eventos
+                    textContent = "O maior evento esportivo do Canadá é a Copa do Mundo de Hóquei no Gelo...";
+                    break;
+                case 'torcida':
+                    imageSrc = 'caminho/para/imagem-torcida.jpg'; // Altere para o caminho da imagem da torcida
+                    textContent = "As torcidas canadenses são apaixonadas, especialmente em esportes como hóquei...";
+                    break;
+            }
+
+            popupText.innerHTML = textContent;
+            popupImage.src = imageSrc; // Atualiza a imagem do popup
+            document.getElementById("popup").style.display = "block"; // Mostra o popup
+        }
+
+        function hidePopup() {
+            document.getElementById("popup").style.display = "none"; // Esconde o popup
+        }
+    </script>
+</head>
+<body>
+    <div id="top"></div>
+    <header>
+        <div class="container">
+            <div class="logotexto">
+                <img src="White_maple_leaf_symbol.png">
+                <h1>BLOG CANADÁ</h1>
+                <img src="White_maple_leaf_symbol.png">
+            </div>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="#top">HOME</a></li>
+                    <li><a href="#conteudoDois" id="irparainfos">INFORMAÇÕES</a></li>
+                    <li><a href="#conteudoTres" id="irparapontos">PONTOS TURÍSTICOS</a></li>
+                    <li><a href="#irparanos">DESENVOLVEDORES</a></li>
+                    <li><a id ="feedback-btn" href="#feedback">FEEDBACK</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div id="feedback-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Nos dê sua opinião!</h2>
+            <div class="rating">
+                <span class="star" data-value="5">&#9733;</span>
+                <span class="star" data-value="4">&#9733;</span>
+                <span class="star" data-value="3">&#9733;</span>
+                <span class="star" data-value="2">&#9733;</span>
+                <span class="star" data-value="1">&#9733;</span>
+            </div>
+            <button id="submit-feedback">Enviar</button>
+        </div>
+    </div>    
+
+    <div class="conteudoum">
+        <div class="bemvindo">
+            <h2>BEM<br>VINDO!!</h2>
+            <p>ao blog sobre o Canadá</p>
+            <div class="botaojogo"><button>JOGO DA MEMÓRIA</button></div>
+        </div>
+    </div>
+
+    <div class="conteudodois" id="conteudoDois">
+        <div class="alinhamentomaior">
+            <div class="engloba">
+                <div class="alinhamento">
+                    <div class="caixa">
+                        <div class="topocaixa">ATLETAS</div>
+                        <p class="texto-caixa">O Canadá possui uma rica tradição olímpica com atletas lendários que marcaram época em diversas modalidades. De nomes icônicos do passado a estrelas em ascensão, esses atletas ajudaram a moldar a história do esporte canadense nas Olimpíadas.</p>
+                        <button onclick="showPopup('atletas')" class="saibamais">Saiba mais</button>
+                    </div>
+                </div>
+            </div>
+            <div class="engloba">
+                <div class="alinhamento">
+                    <div class="caixa">
+                        <div class="topocaixa">OLIMPÍADAS NO CANADÁ</div>
+                        <p class="texto-caixa">Canadá sediou duas edições dos Jogos Olímpicos: Montreal em 1976 e Calgary em 1988.</p>
+                        <button onclick="showPopup('olimpiadas')" class="saibamais">Saiba mais</button>
+                    </div>
+                </div>
+            </div>
+            <div class="engloba">
+                <div class="alinhamento">
+                    <div class="caixa">
+                        <div class="topocaixa">ESPORTES CANADENSES</div>
+                        <p class="texto-caixa">No Canadá, o hóquei no gelo é o esporte mais popular e um verdadeiro ícone nacional. O lacrosse, com origens indígenas, é o esporte nacional de verão.</p>
+                        <button onclick="showPopup('esportes')" class="saibamais">Saiba mais</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="alinhamentomaior">
+            <div class="engloba">
+                <div class="alinhamento">
+                    <div class="caixa">
+                        <div class="topocaixa">ESTÁDIOS</div>
+                        <p class="texto-caixa">O Canadá é lar de estádios como o Rogers Centre em Toronto e o Stade Olympique em Montreal. O Scotiabank Saddledome em Calgary é famoso por seu design único, e o BC Place em Vancouver é notável pelo teto inflável.</p>
+                        <button onclick="showPopup('estadios')" class="saibamais">Saiba mais</button>
+                    </div>
+                </div>
+            </div>
+            <div class="engloba">
+                <div class="alinhamento">
+                    <div class="caixa">
+                        <div class="topocaixa">EVENTO ICÔNICO</div>
+                        <p class="texto-caixa">O maior evento esportivo do Canadá
+                            é a Copa do Mundo de Hóquei no Gelo, onde as melhores 
+                            seleções do mundo competem. Realizado a cada dois anos, é uma
+                             celebração nacional que destaca a paixão canadense pelo hóquei.</p>
+                        <button onclick="showPopup('eventos')" class="saibamais">Saiba mais</button>
+                    </div>
+                </div>
+            </div>
+            <div class="engloba">
+                <div class="alinhamento">
+                    <div class="caixa">
+                        <div class="topocaixa">TORCIDA</div>
+                        <p class="texto-caixa">As torcidas canadenses são apaixonadas,
+                             especialmente em esportes como hóquei no gelo e beisebol.
+                              Torcedores dos Toronto Maple Leafs e dos Montreal Canadiens são conhecidos por seu entusiasmo e
+                               lealdade, criando um ambiente elétrico nos jogos.</p>
+                        <button onclick="showPopup('torcida')" class="saibamais">Saiba mais</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Popup for displaying more information -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="hidePopup()">&times;</span>
+            <img src="" alt="Popup Image" class="popup-image"> <!-- Imagem do popup -->
+            <div class="popup-text" id="popup-text"></div> <!-- Texto do popup -->
+        </div>
+    </div>
+
+    <div class="conteudotres" id="conteudoTres">
+        <div class="sobreposicao">
+            <div class="caixa2">
+                <a class="titulocaixa2">PONTOS TURÍSTICOS:</a><br>
+                <ul class="pontos">
+                    <li><a onclick="abrirCarrossel(0)">Niagara Falls</a></li>
+                    <li><a onclick="abrirCarrossel(1)">Banff National Park</a></li>
+                    <li><a onclick="abrirCarrossel(2)">CN Tower</a></li>
+                    <li><a onclick="abrirCarrossel(3)">Old Quebec</a></li>
+                    <li><a onclick="abrirCarrossel(4)">Stanley Park</a></li>
+                    <li><a onclick="abrirCarrossel(5)">Peggy's Point Lighthouse</a></li>
+                    <li><a onclick="abrirCarrossel(6)">Capilano Suspension Bridge</a></li>
+                    <li><a onclick="abrirCarrossel(7)">Parliament Hill</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="popupCarrossel" class="popup-carrossel">
+        
+        <div class="popup-conteudo">
+            <span id="fecharPopup" class="fechar">&times;</span>
+            <div class="carrossel">
+                <button class="anterior" onclick="mudarSlide(-1)">&#10094;</button>
+                <img id="imagemCarrossel" src="" alt="Imagem do Pop-up">
+                <button class="proximo" onclick="mudarSlide(1)">&#10095;</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="irparanos"></div>
+    <footer>
+        <div class="footer-content">
+            <p>Desenvolvedores:</p>
+            <div class="carousel-container">
+                <button class="carousel-control prev" aria-label="Anterior">&#10094;</button>
+                <div class="carousel">
+                    <div class="carousel-item">André Izidoro Souza</div>
+                    <div class="carousel-item">Matheus Dias Ribeiro</div>
+                    <div class="carousel-item">Denny Lucas dos Santos Nunes</div>
+                    <div class="carousel-item">Thiago Henrique Feitoza</div>
+                    <div class="carousel-item">Gustavo Sampaio Ferreira</div>
+                    <!-- Adicione mais desenvolvedores se necessário -->
+                </div>
+                <button class="carousel-control next" aria-label="Próximo">&#10095;</button>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Blog do Canadá. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script src="feedback-opt.js"></script>
+    <script src="scriptfooter.js"></script>
+    <script src="popup.js"></script>
+</body>
+</html>

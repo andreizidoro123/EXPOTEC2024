@@ -1,0 +1,651 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family:minhaFonte;
+    font-weight: bold;
+    user-select: none;
+}
+header{
+    width: 100%;
+    background-color: #96040b;
+    position: fixed;
+    z-index: 1000;
+    
+}
+.container{
+    display:flex;
+    justify-content: space-between;
+}
+@font-face{
+    font-family:minhaFonte;
+    src: url(OmegaCTRegular.ttf)
+}
+.logotexto {
+    font-family:minhaFonte;
+    display: flex;
+    margin:10px;
+    color:white;
+}
+.logotexto img{
+    margin:2px;
+    width:40px;
+    height: 40px;
+}
+.infos li{
+    display:inline-block;
+    margin:10px;
+}
+.infos li a{
+    font-size: 10px;
+    text-decoration: none;
+    color:white;
+    font-family:minhaFonte;
+    font-weight: bold;
+    margin:30px;
+    transition: 0.5s all;
+}
+.infos li a:hover{
+    color: black;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    margin-top: 18px;
+    margin-left:50px;
+}
+
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 25.5px 40px;
+    transition: background-color 0.3s ease;
+    font-size: 15px;
+}
+
+nav ul li a:hover {
+    background-color: #f8f3e9;
+    color: #641111;
+}
+
+.bemvindo h2{
+    font-weight: bold;
+    width: 60px;
+    height: 60px;
+    font-size: 70px;
+    margin-left: 200px;
+    margin-top:220px;
+}
+.conteudoum{
+    height: 750px;
+    display: flex;
+    background-image: url('fundosite.jpg');
+    background-size: cover;
+    background-color: #96040b;
+}
+.conteudoum img{
+        height: 400px;
+        width: 1000px;
+}
+.bemvindo p{
+    font-size:23.6px;
+    margin-left: 200px;
+    margin-top:120px;
+    font-weight: bold;
+}
+.bemvindo {
+    margin-left:10px;
+}
+.botaojogo button{
+    margin-left: 200px;
+    margin-top:13px;
+    width: 250px;
+    height: 50px;
+    font-weight: bold;
+    font-size:23px;
+    font-family: minhaFonte;
+    color:white;
+    background-color: #96040b;
+    border-style: none;
+    cursor:pointer;
+    transition: 0.1s all;
+    border-radius: 50px;
+    -webkit-box-shadow: 4px 6px 0px -2px rgba(0,0,0,0.88);
+-moz-box-shadow: 4px 6px 0px -2px rgba(0,0,0,0.88);
+box-shadow: 4px 6px 0px -2px rgba(0,0,0,0.88);
+}
+.botaojogo button:active{
+    
+    transform: scale(0.9);
+    -webkit-box-shadow: 10px 10px 0px -200px rgba(0,0,0,1);
+-moz-box-shadow: 10px 10px 0px -200px rgba(0,0,0,1);
+box-shadow: 10px 10px 0px -200px rgba(0,0,0,1);
+transform:translateY(10%);
+
+}
+.conteudodois{
+    background: radial-gradient(circle, #ff000085 -40%, #8b0000 70%);
+    height: 800px;
+    padding: 40px;
+    border-top: 0.1px solid;
+    border-bottom: 0.1px solid;
+    border-color: #f8f3e900;
+    position: relative; /* Necessário para a posição da sombra */
+    box-shadow: 0 0 45px rgba(255, 255, 255, 0.7), /* Brilho vermelho ao redor */
+                0 0 60px rgba(255, 0, 0, 0.5); /* Brilho mais intenso ao redor */
+}
+
+@media (max-width:999px){
+    body{
+        overflow-x: hidden;
+    }
+    .infos{
+        position:absolute;
+        top:8vh;
+        right:0;
+        width:50vw;
+        height: 92vh;
+        background:#bc393f;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform:translateX(100%);
+        transition: transform 0.3s ease-in;
+        display: block;
+    }
+}
+.caixa{
+    border-style: solid;
+    margin-top:60px ;
+    margin-left: 110px;
+    -webkit-box-shadow: 17px 16px 0px 3px rgba(0,0,0,1);
+    -moz-box-shadow: 17px 16px 0px 3px rgba(0,0,0,1);
+    box-shadow: 17px 16px 0px 3px rgba(0,0,0,1);
+    height: 300px;
+    width: 350px;
+    background-color: white;
+    position: relative; /* Adiciona esta linha */
+    border-style: solid;
+    margin-top: 60px;
+    margin-left: 100px;
+    width: 370px;
+    background-color: white;
+    padding: 15px; /* Adiciona espaço interno */
+}
+.caixa2{
+    border-style: solid;
+    margin-top:10px ;
+    margin-left: 110px;
+    -webkit-box-shadow: 17px 16px 0px 3px rgba(0,0,0,1);
+    -moz-box-shadow: 17px 16px 0px 3px rgba(0,0,0,1);
+    box-shadow: 17px 16px 0px 3px rgba(0,0,0,1);
+    height: 350px;
+    width: 550px;
+    background-color: white;
+    position: relative; /* Adiciona esta linha */
+    border-style: solid;
+    margin-top: 1px;
+    margin-left: 220px;
+    background-color: white;
+    padding: 10px; /* Adiciona espaço interno */
+}
+.titulocaixa2{
+    font-size: 40px;
+}
+.topocaixa{
+    background-color:#bc393f;
+    color:white;
+    font-weight: bold;
+    width: 343.5px;
+    height: 40px;
+    margin-bottom: 500px;
+    text-align: center;
+    padding: 10px;
+    border-style: solid;
+}
+
+.alinhamentomaior{
+    display: flex;
+}
+
+.caixa {
+    border-style: solid;
+    margin-top: 45px;
+    margin-left: 100px;
+    width: 370px;
+    background-color: white;
+    padding: 15px; /* Adiciona espaço interno */
+}
+
+.topocaixa {
+    background-color: #a50008;
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box; /* Garante que o padding não afete a largura total */
+    margin-bottom: 10px; /* Espaçamento entre o título e o texto */
+}
+
+.texto-caixa {
+    font-size: 16px; /* Tamanho do texto */
+    color: #333; /* Cor do texto */
+    margin-top: 10px; /* Espaçamento em relação ao título */
+    line-height: 1.5; /* Altura das linhas do texto para melhor legibilidade */
+}
+.conteudotres{
+    background-image: url('fundo.png');
+    background-size: cover;
+    height: 800px;
+    background-position-y: -150px;
+    background-repeat: no-repeat;
+}
+.sobreposicao {
+    padding-top: 100px;
+    margin-left: 700px;
+}
+
+.sobreposto {
+    border-style: solid;
+    width: 600px;
+    height: 400px;
+    background-color: rgba(255, 177, 177, 0.596); /* Fundo semi-transparente */
+    backdrop-filter: blur(12px); /* Aplica o efeito de desfoque no fundo */
+    border-radius: 100px; /* Arredonda os cantos */
+    border: 1px solid rgba(255, 255, 255, 0.349); /* Borda sutil */
+    color: rgb(255, 0, 0);
+    text-align: center;
+    padding-top: 40px;
+    font-weight: bold;
+    position: relative; /* Necessário para a posição da sombra */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.7), /* Brilho vermelho ao redor */
+                0 0 30px rgba(255, 0, 0, 0.5); /* Brilho mais intenso ao redor */
+}
+
+.pontos {
+    margin: 15px;
+    padding-left: 100px;
+    text-align: left;
+    padding-top: 2px;
+}
+
+.pontos li {
+    padding: 5px;
+}
+.pontos li a:hover{
+    color:#bc393f;
+}
+.pontos li a{
+    cursor: pointer;
+}
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1000000000000000000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    position: relative; /* Para posicionar o botão de fechar corretamente */
+}
+
+.close {
+    color: #aaa; /* Cor do 'X' */
+    float: right; /* Posiciona o 'X' à direita */
+    font-size: 28px; /* Tamanho da fonte do 'X' */
+    font-weight: bold; /* Deixa o 'X' em negrito */
+}
+
+.close:hover,
+.close:focus {
+    color: black; /* Cor ao passar o mouse */
+    text-decoration: none; /* Remove o sublinhado */
+    cursor: pointer; /* Muda o cursor ao passar o mouse */
+}
+
+.rating {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.star {
+    font-size: 30px;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.star.selected {
+    color: gold;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.star {
+    font-size: 30px;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.star.selected {
+    color: #a74646;
+    transition: color 0.3s;
+}
+#submit-feedback {
+    background-color: transparent;
+    color: #a74646;
+    padding: 10px 20px;
+    border: 2px solid #a74646;
+    border-radius: 100px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#submit-feedback:hover {
+    background-color: #a74646;
+    color: white;
+}
+#top {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+.sobrenos{
+    height: 500px;
+    background-color: red;
+}
+#irparanos {
+    position: absolute;
+    top: 1;
+    width: 50%;
+    height: 0;
+}
+/* Estilo geral do rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilo do conteúdo do rodapé */
+.footer-content {
+    margin-bottom: 10px;
+}
+
+.footer-content p {
+    font-size: 18px;
+    margin: 0;
+}
+
+/* Estilo do carrossel */
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+    padding: 10px;
+}
+
+/* Estilo das setas de navegação */
+.carousel-control {
+    width: 60px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 200px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 10;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Estilo da parte inferior do rodapé */
+.footer-bottom {
+    border-top: 1px solid #444;
+    padding-top: 10px;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .footer-content p {
+        font-size: 16px;
+    }
+
+    .carousel-item {
+        font-size: 14px;
+    }
+
+    .footer-bottom p {
+        font-size: 12px;
+    }
+}
+.saibamais{
+    position: absolute;
+    bottom: 20px;
+    left: 240px;
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color:#a50008;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    -webkit-box-shadow: 3px 2px 13px 0px rgba(0,0,0,0.24);
+    -moz-box-shadow: 3px 2px 13px 0px rgba(0,0,0,0.24);
+    box-shadow: 3px 2px 13px 0px rgba(0,0,0,0.24);
+}
+.popup {
+    display: none; /* Inicialmente escondido */
+    position: fixed; /* Fixa na tela */
+    z-index: 10000; /* Coloca na frente de outros elementos */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Adiciona rolagem se necessário */
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo semi-transparente */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+}
+
+/* Estilo do conteúdo do popup */
+.popup-content {
+    background-color: #fefefe; /* Fundo branco */
+    margin: 10% auto; /* Margem do topo e centralizado */
+    padding: 20px; /* Espaçamento interno */
+    border: 1px solid #888; /* Borda sutil */
+    border-radius: 10px; /* Cantos arredondados */
+    width: 80px; /* Largura do popup */
+    max-width: 600px; /* Largura máxima */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para efeito de profundidade */
+    justify-content: center;
+}
+
+/* Estilo do botão de fechar */
+.close {
+    color: #aaa; /* Cor padrão */
+    float: right; /* Alinha à direita */
+    font-size: 28px; /* Tamanho do texto */
+    font-weight: bold; /* Negrito */
+    transform: translateY(-50%);
+    
+}
+
+.close:hover,
+.close:focus {
+    color: #d9534f; /* Cor quando passa o mouse */
+    text-decoration: none; /* Sem sublinhado */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}
+
+/* Estilo do texto dentro do popup */
+#popup-text {
+    transform: translateX(-2%);
+    justify-content: center;
+    margin-top: 20px; /* Espaçamento acima do texto */
+    font-size: 18px; /* Tamanho do texto */
+    color: #333; /* Cor do texto */
+    line-height: 1.5; /* Espaçamento entre linhas */
+}
+.popup-content {
+    justify-content: center;
+    text-align: center;
+    margin-top:20px ;
+    background-color: #fefefe; /* Fundo branco */ /* Margem do topo e centralizado */
+    padding: 20px; /* Espaçamento interno */
+    border: 1px solid #888; /* Borda sutil */
+    border-radius: 10px; /* Cantos arredondados */
+    width: 100%; /* Ajuste a largura do popup */
+    max-width: 800px; /* Largura máxima aumentada para 800px */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para efeito de profundidade */
+}
+
+.popup-text {
+    flex: 1; /* O texto ocupa o espaço restante */
+    margin-left: 20px; /* Espaçamento à esquerda do texto */
+}
+
+.popup-image {
+    width: 750px; /* Defina a largura desejada da imagem */
+    height: 350px; /* Mantém a proporção da imagem */
+}
+/* Estilos básicos para o pop-up */
+/* Estilos básicos para o pop-up */
+.popup-carrossel {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000000000000;
+}
+
+.popup-conteudo {
+    background-color: rgba(255, 255, 255, 0);
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+    width: 90%; /* Aumenta a largura do pop-up */
+    max-width: 1200px; /* Define um limite máximo para a largura */
+    max-height: 90%;
+    overflow: hidden;
+}
+
+.carrossel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carrossel img {
+    max-width: 100%;
+    max-height: 80vh; /* Ajusta a altura máxima da imagem */
+    height: auto;
+    margin: 0 auto;
+    
+}
+
+.fechar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 38px;
+    cursor: pointer;
+    transform: translateX(59%);
+    color: white;
+}
+
+.anterior, .proximo {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none; /* Remover borda padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+.anterior {
+    left: -20px; /* Mover para fora do contêiner */
+    border-radius: 3px 0 0 3px;
+    z-index: 100000000;
+}
+
+.proximo {
+    right: -20px; /* Mover para fora do contêiner */
+    border-radius: 0 3px 3px 0;
+}
+
+.anterior:hover, .proximo:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
